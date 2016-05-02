@@ -1,7 +1,8 @@
-sap.ui.jsview("sap.ui.demo.wt.controller.App", {
+(function() {
+sap.ui.jsview("sap.ui.demo.wt.view.App", {
 
   getControllerName: function() {
-    return "sap.ui.demo.wt.view.App"
+    return "sap.ui.demo.wt.controller.App";
   },
 
   createContent: function(oController) {
@@ -38,5 +39,7 @@ sap.ui.jsview("sap.ui.demo.wt.controller.App", {
     return page; 
   }
 
-})
+});
 
+  
+});
