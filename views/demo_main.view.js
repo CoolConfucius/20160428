@@ -21,9 +21,18 @@ sap.ui.jsview("demo.views.demo_main", {
       text: "Demo"
     }); 
 
+    var filterBtn = new sap.m.Button(this.createId("demo-filterBtnnbutton"),{
+      icon: "sap-icon://add-filter",
+      tooltip: "Filter",
+      press: function(e) {
+        oController.openFilterPanel();
+      }
+    })
+
     var appHeader = new sap.m.Bar(this.createId("demo-headerBar"), {      
       contentLeft: [homeBtn],
-      contentMiddle: [headerLabel]
+      contentMiddle: [headerLabel],
+      contentRight: [filterBtn]
     })
 
 
