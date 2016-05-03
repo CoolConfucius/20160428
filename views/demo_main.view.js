@@ -15,7 +15,8 @@ sap.ui.jsview("demo.views.demo_main", {
       press: function() {
         alert("Home sweet home");
       }
-    })
+    });
+    oController.homeBtn = homeBtn; 
 
     var headerLabel = new sap.m.Label(this.createId("demo-label"), {
       text: "Demo"
@@ -27,13 +28,15 @@ sap.ui.jsview("demo.views.demo_main", {
       press: function(e) {
         oController.openFilterPanel();
       }
-    })
+    });
+    oController.filterBtn = filterBtn; 
+
 
     var appHeader = new sap.m.Bar(this.createId("demo-headerBar"), {      
       contentLeft: [homeBtn],
       contentMiddle: [headerLabel],
       contentRight: [filterBtn]
-    })
+    }).addStyleClass("as-app-header");
 
 
     var oaccIDSelect = new sap.m.Select({
