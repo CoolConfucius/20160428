@@ -1,0 +1,32 @@
+/*.ocmas-page {
+  background: #ffffff !important;; 
+}
+
+.ocmas-page .as-app-header .sapMBarChild {
+  color: white;
+  font-size: 1.3rem!important;
+  text-shadow: none!important;
+}
+
+.ocmas-page>.sapMPageHeader {
+  background: none !important;
+  box-shadow: none !important;
+  background: -webkit-linear-gradient(left, #474187, #60468D) !important;
+  background: linear-gradient(to right, #474187, #60468D) !important;
+  border-bottom: 1px solid white;
+}
+
+.as-app-header .sapMBtn:hover>.sapMBtnHoverable {
+  background-color: transparent !important;
+}
+
+.as-app-header .sapMBtnIcon {
+  color: #ffffff;
+}
+
+.ocm-empty-label {
+  color: #ffffff;
+  margin-top: 200px;
+}
+
+*/
