@@ -16,5 +16,9 @@ sap.ui.controller("demo.views.demo_main", {
 
   onAfterRendering: function() {
 
+  }, 
+
+  openFilterPanel: function(oEvt){
+    alert("openFilterPanel"); 
   }
 })
