@@ -1,8 +1,8 @@
 jQuery.sap.declare("demo.Component");
 jQuery.sap.require("sap.m.routing.RouteMatchedHandler");
 
-jQuery.sap.resgisterModulePath("demo", "./");
-jQuery.sap.resgisterModulePath("demo.views", "./views");
+jQuery.sap.registerModulePath("demo", "./");
+jQuery.sap.registerModulePath("demo.views", "./views");
 
 sap.ui.core.UIComponent.extend("demo.Component", {
   metadata : {
@@ -10,7 +10,7 @@ sap.ui.core.UIComponent.extend("demo.Component", {
     "version" : "1.0", 
     "includes" : [],
     "dependencies" : {
-      "libs" : ["sap.m", "sap.me", "sap.ushell", "sap.viz", "sap.ui.commmons", "sap.ui.ux3", "sap.ui.unified"],
+      "libs" : ["sap.m"],
       "components" : []
     }, 
 
@@ -65,7 +65,6 @@ sap.ui.core.UIComponent.extend("demo.Component", {
       });
 
       this.oMainView.setModel(demoModel, "demo");
-      this.oMainView.setModel(i18nModel, "i18n");
 
       return this.oMainView;
     }
