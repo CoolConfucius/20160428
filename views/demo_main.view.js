@@ -22,19 +22,19 @@ sap.ui.jsview("demo.views.demo_main", {
     })
 
 
-    // var oaccIDSelect = new sap.m.Select({
-    //   enabled: true, 
-    //   width: 100%,
-    //   items: [],
-    //   layoutData: new sap.ui.layout.GridData({
-    //     span: "L12 M12 S12"
-    //   }),
-    //   change: function(e) {
-    //     var value = this.getSelectedItem().getText(); 
-    //     oController.onaccIDSelectChange(value); 
-    //   }
-    // });
-    // oController.oaccIDSelect=oaccIDSelect; 
+    var oaccIDSelect = new sap.m.Select({
+      enabled: true, 
+      width: "100%",
+      items: [],
+      layoutData: new sap.ui.layout.GridData({
+        span: "L12 M12 S12"
+      }),
+      change: function(e) {
+        var value = this.getSelectedItem().getText(); 
+        oController.onaccIDSelectChange(value); 
+      }
+    });
+    oController.oaccIDSelect=oaccIDSelect; 
 
     var HorizontalLayout = new sap.ui.layout.HorizontalLayout({
       content: [
@@ -48,7 +48,8 @@ sap.ui.jsview("demo.views.demo_main", {
                     linebreak: true, 
                     span: "L12 M12 S12"
                   })
-                })
+                }),
+                oaccIDSelect
               ]
             })
           ]
