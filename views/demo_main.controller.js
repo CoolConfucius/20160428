@@ -1,5 +1,6 @@
 sap.ui.controller("demo.views.demo_main", {
-  bus : sap.ui.getCore().getEventBus(),
+  
+  //bus : sap.ui.getCore().getEventBus(),
 
   onInit: function() {
     console.log("on init main controller");
@@ -14,6 +15,6 @@ sap.ui.controller("demo.views.demo_main", {
   // }
 
   onAfterRendering: function() {
-    
+
   }
 })

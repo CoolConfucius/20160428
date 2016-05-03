@@ -37,7 +37,7 @@ sap.ui.jsview("demo.views.demo_main", {
       ]
     })
 
-    var Subpanel = sap.m.Panel({
+    var Subpanel = new sap.m.Panel({
       content: [HorizontalLayout]
     })
 

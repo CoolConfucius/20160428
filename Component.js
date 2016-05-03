@@ -67,6 +67,7 @@ sap.ui.core.UIComponent.extend("demo.Component", {
     });
 
     //this.oMainView.setModel(demoModel, "device");
+    this.getRouter().initialize();
 
     return this.oMainView;
   }
