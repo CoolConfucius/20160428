@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Hello World</title>
-  <script id='sap-ui-bootstrap' src='https://openui5.hana.ondemand.com/resources/sap-ui-core.js' data-sap-ui-libs='sap.m' data-sap-ui-theme='sap_bluecrystal' data-sap-ui-xx-bindingSyntax="complex" data-sap-ui-compatVersion='edge' data-sap-ui-preload='async'>
+  <script id='sap-ui-bootstrap' src='https://openui5.hana.ondemand.com/resources/sap-ui-core.js' 
+  data-sap-ui-libs='sap.ui.commons,sap.m,sap.viz,sap.ui.ux3,sap.ui.unified' 
+  data-sap-ui-theme='sap_bluecrystal' data-sap-ui-xx-bindingSyntax="complex" data-sap-ui-compatVersion='edge' data-sap-ui-preload='async'>
   // src="/sap/ui5/1/resources/sap-ui-core.js"
   // src='https://openui5.hana.ondemand.com/1.32.7/resources/sap-ui-core.js'
   // src='https://openui5.hana.ondemand.com/resources/sap-ui-core.js'
@@ -16,14 +18,14 @@
    //          }).placeAt("content");
    //       });
 
-// jQuery.sap.registerModulePath("sap.ui.demo.wt", "./" );
+jQuery.sap.registerModulePath("demo", "./" );
 jQuery.sap.require("jquery.sap.resources");
 jQuery.sap.require("sap.ui.core.IconPool");
 
 sap.ui.getCore().attachInit(function() {
   var shell = new sap.m.Shell("shell", {
-    title: "Monthly Billing", 
-    appWidthLimited: false
+    title: "Demo", 
+    appWidthLimited: false,
     app: new sap.ui.core.ComponentContainer({
       name: "demo"
     })
