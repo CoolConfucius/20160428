@@ -21,7 +21,8 @@ sap.ui.jsview("demo.views.demo_main", {
       text: "Demo"
     }); 
 
-    var appHeader = new sap.m.Bar(this.createId("demo-headerBar"), {
+    var appHeader = new sap.m.Bar(this.createId("demo-headerBar"), {      
+      contentLeft: [homeBtn],
       contentMiddle: [headerLabel]
     })
 
