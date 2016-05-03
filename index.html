@@ -17,35 +17,23 @@
   </script>
 
   <script>
-   // sap.ui.getCore().attachInit(function () {
-   //          sap.ui.jsview({
-   //             viewName : "sap.ui.demo.wt.view.App"
-   //          }).placeAt("content");
-   //       });
+  sap.ui.getCore().attachInit(function() {
 
+    jQuery.sap.registerModulePath("demo", "./" );
+    jQuery.sap.require("jquery.sap.resources");
+    jQuery.sap.require("sap.ui.core.IconPool");
 
-sap.ui.getCore().attachInit(function() {
-
-  jQuery.sap.registerModulePath("demo", "./" );
-  jQuery.sap.require("jquery.sap.resources");
-  jQuery.sap.require("sap.ui.core.IconPool");
-  
-  console.log("TEST");
-  var shell = new sap.m.Shell("shell", {
-    title: "Demo", 
-    appWidthLimited: false,
-    app: new sap.ui.core.ComponentContainer({
-      name: "demo"
-    })
-  });
-  shell.placeAt("content"); 
-  
-})
-
-
-  // var page = sap.ui.view({viewName:"sap.ui.demo.wt.view.App", type: sap.ui.core.mvc.ViewType.JS});
-  // page.placeAt("content");
-
+    console.log("TEST");
+    var shell = new sap.m.Shell("shell", {
+      title: "Demo", 
+      appWidthLimited: false,
+      app: new sap.ui.core.ComponentContainer({
+        name: "demo"
+      })
+    });
+    shell.placeAt("content"); 
+    
+  })
 
   </script>
 </head>
