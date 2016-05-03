@@ -37,6 +37,7 @@ sap.ui.core.UIComponent.extend("demo.Component", {
     },
 
     init : function() {
+      console.log("UNDER INIT ");
       sap.ui.core.UIComponent.prototype.init.apply(this, arguments); 
 
       this._oRouteMatchedHandler = new sap.m.routing.RouteMatchedHandler(this.getRouter());

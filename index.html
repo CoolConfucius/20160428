@@ -23,11 +23,14 @@
    //          }).placeAt("content");
    //       });
 
-jQuery.sap.registerModulePath("demo", "./" );
-jQuery.sap.require("jquery.sap.resources");
-jQuery.sap.require("sap.ui.core.IconPool");
 
 sap.ui.getCore().attachInit(function() {
+
+  jQuery.sap.registerModulePath("demo", "./" );
+  jQuery.sap.require("jquery.sap.resources");
+  jQuery.sap.require("sap.ui.core.IconPool");
+  
+  console.log("TEST");
   var shell = new sap.m.Shell("shell", {
     title: "Demo", 
     appWidthLimited: false,
