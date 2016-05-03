@@ -9,9 +9,13 @@ sap.ui.jsview("demo.views.demo_main", {
 
     this.setHeight("100%"); 
 
-    // var homeBtn = new sap.m.Button(this.createId("demo-homebutton"), {
-
-    // })
+    var homeBtn = new sap.m.Button(this.createId("demo-homebutton"), {
+      icon: "sap-icon://home",
+      tooltip: "Home",
+      press: function() {
+        alert("Home sweet home");
+      }
+    })
 
     var headerLabel = new sap.m.Label(this.createId("demo-label"), {
       text: "Demo"
