@@ -101,6 +101,13 @@ sap.ui.jsview("demo.views.demo_main", {
       text:"Sort By"
     }).addStyleClass('labelosort'); 
     oController.labelosort = labelosort;
+
+    var ogroupbtn = new sap.m.Button({
+      icon: "sap-icon://group-2",
+      tooltip: "Group",
+      enabled:false,
+    }).addStyleClass('ogroupbtn');
+    oController.ogroupbtn=ogroupbtn;
     
 
     var oaccIDSelect = new sap.m.Select({
