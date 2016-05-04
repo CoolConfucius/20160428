@@ -5,8 +5,8 @@ sap.ui.controller("demo.views.demo_main", {
   onInit: function() {
     console.log("on init main controller");
     this.app = sap.ui.getCore().byId("demo-app");
-    // this.accCount();
-    // this.fillTable();
+    this.accCount();
+    this.fillTable();
     // this.deviceLinkedAccounts(); 
   },
 
@@ -18,7 +18,7 @@ sap.ui.controller("demo.views.demo_main", {
 
   }, 
 
-  numberOfAccount: 0,
+  numberOfAccounts: 0,
 
   accCount: function() {
     var that=this;
@@ -30,7 +30,7 @@ sap.ui.controller("demo.views.demo_main", {
   },
 
   accountsarray:[],
-  accSettingsModel: new sap.ui.model.json.JSONModel(),
+  // accSettingsModel: new sap.ui.model.json.JSONModel(),
   carriers: [],
 
   fillTable: function() {
@@ -38,7 +38,7 @@ sap.ui.controller("demo.views.demo_main", {
     that.carriers = []; 
     alert("fillTable")
     // $.ajax
-  }
+  },
 
   openFilterPanel: function(oEvt){
     alert("openFilterPanel"); 
