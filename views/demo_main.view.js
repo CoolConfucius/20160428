@@ -118,6 +118,12 @@ sap.ui.jsview("demo.views.demo_main", {
     })    
     oController.sortBtn = sortBtn; 
 
+    var SubHeader = new sap.m.Bar(this.createId("ASsubheaderBar"), {
+      contentLeft: [acctitle,ocreatebtn,deletebtn],
+      contentRight: [sortBtn,labelosort,osort,ogroupbtn]
+    }).addStyleClass('as_SubheaderBar');
+    oController.SubHeader = SubHeader;
+
     var oaccIDSelect = new sap.m.Select({
       enabled: true, 
       width: "100%",
