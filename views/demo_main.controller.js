@@ -18,6 +18,17 @@ sap.ui.controller("demo.views.demo_main", {
 
   }, 
 
+  numberOfAccount: 0,
+
+  accCount: function() {
+    // var that=this;
+    alert("accCount");
+  }
+
+  accountsarray:[],
+  accSettingsModel: new sap.ui.model.json.JSONModel(),
+  carriers: [];
+
   openFilterPanel: function(oEvt){
     alert("openFilterPanel"); 
   }

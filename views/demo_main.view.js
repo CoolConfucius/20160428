@@ -165,7 +165,7 @@ sap.ui.jsview("demo.views.demo_main", {
 
     var oPage = new sap.m.Page({
       customHeader: appHeader, 
-      content: [Subpanel]
+      content: [Subpanel,SubHeader]
     })
 
     return oPage; 
