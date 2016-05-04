@@ -38,7 +38,7 @@ sap.ui.controller("demo.views.demo_main", {
     //     sap.m.MessageToast.show("Error: "+XMLHttpRequest.responseText);
     //   }
     // });
-    console.log(that);
+    // console.log(that);
     that.acctitle.setText("Accounts (0)");
   },
 
@@ -50,8 +50,31 @@ sap.ui.controller("demo.views.demo_main", {
     var that = this;
     that.carriers = []; 
     console.log("fillTable")
-    // $.ajax
+    $.ajax({
+      url: '/sap/ocm/account_settings/ui/services/as.xsodata/account/',
+      type: "GET",
+      cache: false, 
+      headers: {"X-Csrf-token" : sessionStorage.getItem("CSRF-Token")},
+      dataType: "json",
+      success: function(data) {
+        that.accountsarray = data.d.results;
+        that.accSettingsModel.setData(that.accountsarray); 
+        for (var i = 0; i < that.accountsarray.length; i++) {
+          that.pushTouniqueArray(that.carriers, accountsarray[i].CARRIER_NAME);
+        }
+      }
+    })
   },
+
+
+  pushTouniqueArray: function(array, item) {
+    for (var i = 0; i < array.length; i++) {
+      if (array[i].indexOf(item) !== -1) {
+        return; 
+      }
+      array.push(item); 
+    };
+  }
 
   openFilterPanel: function(oEvt){
     alert("openFilterPanel"); 
