@@ -38,6 +38,7 @@ sap.ui.controller("demo.views.demo_main", {
     //     sap.m.MessageToast.show("Error: "+XMLHttpRequest.responseText);
     //   }
     // });
+    console.log(that);
     that.acctitle.setText("Accounts (0)");
   },
 

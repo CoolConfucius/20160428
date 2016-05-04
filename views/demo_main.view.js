@@ -46,6 +46,7 @@ sap.ui.jsview("demo.views.demo_main", {
     var acctitle = new sap.m.Label({
       For:"accid"
     }).addStyleClass('acctitle'); 
+    oController.acctitle = acctitle; 
 
     var ocreatebtn = new sap.m.Button({
       icon: "sap-icon://add",
