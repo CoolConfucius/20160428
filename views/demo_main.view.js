@@ -81,13 +81,13 @@ sap.ui.jsview("demo.views.demo_main", {
         var value1 = this.getSelectedItem().getText();
         if (value1 == "Account Name") {
           var value = "NAME"; 
-        };
+        }
         if (value1 == "Account ID") {
           var value = "ACCOUNTID"; 
-        };
+        }
         else if (value1 == "Control Center") {
           var value = "CONTROL_CENTER"; 
-        };
+        }
         oController.onSort(value); 
       }
     }).addStyleClass('osort');
