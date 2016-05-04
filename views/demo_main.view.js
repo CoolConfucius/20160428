@@ -92,6 +92,10 @@ sap.ui.jsview("demo.views.demo_main", {
       }
     }).addStyleClass('osort');
     oController.osort=osort; 
+
+    osort.addItem(new sap.ui.core.Item({text: "Account Name"}));
+    osort.addItem(new sap.ui.core.Item({text: "Account ID"}));
+    osort.addItem(new sap.ui.core.Item({text: "Control Center"}));
     
 
     var oaccIDSelect = new sap.m.Select({
