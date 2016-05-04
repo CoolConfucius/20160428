@@ -108,7 +108,15 @@ sap.ui.jsview("demo.views.demo_main", {
       enabled:false,
     }).addStyleClass('ogroupbtn');
     oController.ogroupbtn=ogroupbtn;
-    
+
+    var sortBtn = new sap.m.Button({
+      icon: "sap-icon://sort",
+      tooltip: "Sort",
+      press: function() {
+        oController.SortbuttonClicked();
+      }
+    })    
+    oController.sortBtn = sortBtn; 
 
     var oaccIDSelect = new sap.m.Select({
       enabled: true, 
