@@ -22,7 +22,7 @@ sap.ui.controller("demo.views.demo_main", {
 
   accCount: function() {
     var that=this;
-    alert("accCount");
+    console.log("accCount");
 
     // $.ajax({
     //   url: '/sap/ocm/account...'
@@ -30,13 +30,13 @@ sap.ui.controller("demo.views.demo_main", {
   },
 
   accountsarray:[],
-  // accSettingsModel: new sap.ui.model.json.JSONModel(),
+  accSettingsModel: new sap.ui.model.json.JSONModel(),
   carriers: [],
 
   fillTable: function() {
     var that = this;
     that.carriers = []; 
-    alert("fillTable")
+    console.log("fillTable")
     // $.ajax
   },
 
