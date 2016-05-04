@@ -21,13 +21,24 @@ sap.ui.controller("demo.views.demo_main", {
   numberOfAccount: 0,
 
   accCount: function() {
-    // var that=this;
+    var that=this;
     alert("accCount");
-  }
+
+    // $.ajax({
+    //   url: '/sap/ocm/account...'
+    // })
+  },
 
   accountsarray:[],
   accSettingsModel: new sap.ui.model.json.JSONModel(),
-  carriers: [];
+  carriers: [],
+
+  fillTable: function() {
+    var that = this;
+    that.carriers = []; 
+    alert("fillTable")
+    // $.ajax
+  }
 
   openFilterPanel: function(oEvt){
     alert("openFilterPanel"); 
