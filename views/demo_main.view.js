@@ -9,6 +9,8 @@ sap.ui.jsview("demo.views.demo_main", {
 
     this.setHeight("100%"); 
 
+// HEADER BAR 
+
     var homeBtn = new sap.m.Button(this.createId("demo-homebutton"), {
       icon: "sap-icon://home",
       tooltip: "Home",
@@ -38,6 +40,59 @@ sap.ui.jsview("demo.views.demo_main", {
       contentRight: [filterBtn]
     }).addStyleClass("as-app-header");
 
+
+    // SUB HEADER BAR 
+
+    var acctitle = new sap.m.Label({
+      For:"accid"
+    }).addStyleClass('acctitle'); 
+
+    var ocreatebtn = new sap.m.Button({
+      icon: "sap-icon://add",
+      tooltip: "Create", 
+      press: function() {
+        oController.AddDialog.setTitle("New Account"); 
+        oController.Addaccid.setEnabled(true); 
+        oController.Addcarrier.setEnabled(true); 
+        oController.AddDialog.open();
+        oController.clearFields(); 
+      }
+    }).addStyleClass("ocreatebtn");
+    oController.ocreatebtn=ocreatebtn; 
+
+    var deletebtn = new sap.m.Button({
+      icon: "sap-icon://delete",
+      tooltip: "Delete", 
+      press: function(e) {
+        if (oController.accSettingsTable.getSelectedItems().length > 0) {
+          oController.DeleteDialog.open(); 
+        }
+        else {
+          sap.m.MessageBox.alert("Please select accounts first."); 
+        }
+      }
+    })
+    oController.deletebtn=deletebtn; 
+
+    var osort = new sap.m.Select({
+      enabled: true, 
+      width:"200px", 
+      change: function(e) {
+        var value1 = this.getSelectedItem().getText();
+        if (value1 == "Account Name") {
+          var value = "NAME"; 
+        };
+        if (value1 == "Account ID") {
+          var value = "ACCOUNTID"; 
+        };
+        else if (value1 == "Control Center") {
+          var value = "CONTROL_CENTER"; 
+        };
+        oController.onSort(value); 
+      }
+    }).addStyleClass('osort');
+    oController.osort=osort; 
+    
 
     var oaccIDSelect = new sap.m.Select({
       enabled: true, 
