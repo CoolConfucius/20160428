@@ -189,6 +189,10 @@ sap.ui.jsview("demo.views.demo_main", {
     }).addStyleClass('accSettingsTable');
     oController.accSettingsTable = accSettingsTable; 
 
+    var carrierpanel = new sap.m.Panel().addStyleClass('panels carrierpanel');
+    oController.carrierpanel = carrierpanel;
+    carrierpanel.addContent(new sap.m.Text({text: "{CARRIER_NAME}",textAlign : sap.ui.core.TextAlign.Begin}));
+    carrierpanel.addContent(new sap.ui.core.Icon({src:"sap-icon://inspection"}));
 
 
     var oaccIDSelect = new sap.m.Select({
