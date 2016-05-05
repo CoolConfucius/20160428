@@ -127,6 +127,10 @@ sap.ui.jsview("demo.views.demo_main", {
 
 // token
 
+var oInfoToolbar = new sap.ui.layout.HorizontalLayout( {
+  
+})
+
 
 
 
