@@ -166,6 +166,18 @@ var accSettingsTable = new sap.m.Table({
         text: "Control Center"
       })
     }),
+    new sap.m.Column({
+      hAlign : "Left",
+      header: new sap.m.Label({
+        text: "Contact"
+      })
+    }),
+    new sap.m.Column({
+      hAlign : "Left",
+      header: new sap.m.Label({
+        text: "Email"
+      })
+    })
 
   ]
 })
