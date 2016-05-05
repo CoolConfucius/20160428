@@ -194,6 +194,10 @@ sap.ui.jsview("demo.views.demo_main", {
     carrierpanel.addContent(new sap.m.Text({text: "{CARRIER_NAME}",textAlign : sap.ui.core.TextAlign.Begin}));
     carrierpanel.addContent(new sap.ui.core.Icon({src:"sap-icon://inspection"}));
 
+    var contactpanel = new sap.m.Panel().addStyleClass('panels contactpanel');
+    oController.contactpanel = contactpanel;
+    contactpanel.addContent(new sap.m.Text({text: "{PRIMARYCONTACT}",textAlign : sap.ui.core.TextAlign.Begin}));
+    contactpanel.addContent(new sap.ui.core.Icon({src:"sap-icon://employee-lookup"}));
 
     var oaccIDSelect = new sap.m.Select({
       enabled: true, 
