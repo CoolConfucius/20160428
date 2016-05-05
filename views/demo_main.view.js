@@ -160,6 +160,12 @@ var accSettingsTable = new sap.m.Table({
         text: "Account Name"
       })
     }),
+    new sap.m.Column({
+      hAlign : "Left",
+      header: new sap.m.Label({
+        text: "Control Center"
+      })
+    }),
 
   ]
 })
