@@ -135,7 +135,7 @@ sap.ui.jsview("demo.views.demo_main", {
       } ) ]
     } );
     oController.oInfoToolbar = oInfoToolbar;
-
+    oInfoToolbar.addStyleClass( "filterTokenizer" );
 
 
 
