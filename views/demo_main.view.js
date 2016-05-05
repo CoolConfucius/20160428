@@ -134,6 +134,7 @@ sap.ui.jsview("demo.views.demo_main", {
         text: "Sorted By: "
       } ) ]
     } );
+    oController.oInfoToolbar = oInfoToolbar;
 
 
 
