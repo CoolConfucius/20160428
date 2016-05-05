@@ -125,7 +125,7 @@ sap.ui.jsview("demo.views.demo_main", {
     }).addStyleClass('as_SubheaderBar');
     oController.SubHeader = SubHeader;
 
-// token
+// TOKEN
 
     var oInfoToolbar = new sap.ui.layout.HorizontalLayout( {
       visible: false,
@@ -142,7 +142,20 @@ sap.ui.jsview("demo.views.demo_main", {
     });
     oController.oToken = oToken;
 
+// TABLE
 
+var accSettingsTable = new sap.m.Table({
+  mode: sap.m.ListMode.MultiSelect,
+  width:"92%",
+  columns: [
+    new sap.m.Column({
+      hAlign : "Left",
+      header: new sap.m.Label({
+        text : "Account ID"
+      })
+    })
+  ]
+})
 
 
 
