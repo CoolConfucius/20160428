@@ -89,7 +89,7 @@ sap.ui.controller("demo.views.demo_main", {
         }
       }
     });
-  }
+  },
 
   pushTouniqueArray: function(array, item) {
     for (var i = 0; i < array.length; i++) {
@@ -98,7 +98,7 @@ sap.ui.controller("demo.views.demo_main", {
       }
       array.push(item); 
     };
-  }
+  },
 
   openFilterPanel: function(oEvt){
     alert("openFilterPanel"); 
