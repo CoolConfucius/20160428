@@ -125,6 +125,14 @@ sap.ui.jsview("demo.views.demo_main", {
     }).addStyleClass('as_SubheaderBar');
     oController.SubHeader = SubHeader;
 
+// token
+
+
+
+
+
+
+
     var oaccIDSelect = new sap.m.Select({
       enabled: true, 
       width: "100%",
