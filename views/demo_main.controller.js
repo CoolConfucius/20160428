@@ -59,13 +59,37 @@ sap.ui.controller("demo.views.demo_main", {
       success: function(data) {
         that.accountsarray = data.d.results;
         that.accSettingsModel.setData(that.accountsarray); 
-        for (var i = 0; i < that.accountsarray.length; i++) {
+        for (var i=0;i<that.accountsarray.length;i++) {
           that.pushTouniqueArray(that.carriers, accountsarray[i].CARRIER_NAME);
         }
+        that.Addcarrier.addItem(new sap.ui.core.Item({text: "Select a Carrier",key:"default"}));
+        for (var j=0;j<that.carriers.length;j++) {
+          that.Addcarrier.addItem(new sap.ui.core.Item({text: that.carriers[j],key:that.carriers[j]}));
+        }
+      },
+      error: function(XMLHttpRequest, textStatus, errorThrown) {
+        sap.m.MessageToast.show("Error: "+XMLHttpRequest.responseText);
       }
-    })
+    });
   },
 
+  deviceLinkedAccountsArray: [],
+
+  deviceLinkedAccounts: function() {
+    var that=this;
+    $.ajax({
+      url: '/sap/ocm/account_settings/ui/services/as-analyticview.xsodata/AV/?$select=ACCOUNTID,DEVICE_ID',
+      type: "GET",
+      cache: false, 
+      headers: {"X-Csrf-token" : sessionStorage.getItem("CSRF-Token")},
+      dataType: "json",
+      success: function(data,response) {
+        for (i=0; i<data.d.results.length; i++) {
+          that.deviceLinkedAccountsArray.push(data.d.results[i].ACCOUNTID); 
+        }
+      }
+    });
+  }
 
   pushTouniqueArray: function(array, item) {
     for (var i = 0; i < array.length; i++) {
