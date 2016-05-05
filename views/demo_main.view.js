@@ -140,6 +140,7 @@ sap.ui.jsview("demo.views.demo_main", {
     var oToken = new sap.m.Token({
       'delete': [ oController.deleteSort, oController ]
     });
+    oController.oToken = oToken;
 
 
 
