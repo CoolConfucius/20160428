@@ -128,8 +128,12 @@ sap.ui.jsview("demo.views.demo_main", {
 // token
 
     var oInfoToolbar = new sap.ui.layout.HorizontalLayout( {
-      
-    })
+      visible: false,
+      allowWrapping: true, 
+      content: [ new sap.m.Label( {
+        text: "Sorted By: "
+      } ) ]
+    } );
 
 
 
