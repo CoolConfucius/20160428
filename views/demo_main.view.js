@@ -187,7 +187,7 @@ sap.ui.jsview("demo.views.demo_main", {
       })
       ]
     }).addStyleClass('accSettingsTable');
-    oController
+    oController.accSettingsTable = accSettingsTable; 
 
 
 
