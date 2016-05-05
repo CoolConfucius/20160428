@@ -137,6 +137,9 @@ sap.ui.jsview("demo.views.demo_main", {
     oController.oInfoToolbar = oInfoToolbar;
     oInfoToolbar.addStyleClass( "filterTokenizer" );
 
+    var oToken = new sap.m.Token({
+      'delete': [ oController.deleteSort, oController ]
+    });
 
 
 
