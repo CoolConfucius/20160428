@@ -153,7 +153,14 @@ var accSettingsTable = new sap.m.Table({
       header: new sap.m.Label({
         text : "Account ID"
       })
-    })
+    }),
+    new sap.m.Column({
+      hAlign : "Left",
+      header: new sap.m.Label({
+        text: "Account Name"
+      })
+    }),
+
   ]
 })
 
