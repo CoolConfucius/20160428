@@ -125,117 +125,117 @@ sap.ui.jsview("demo.views.demo_main", {
     }).addStyleClass('as_SubheaderBar');
     oController.SubHeader = SubHeader;
 
-// TOKEN
+    // TOKEN
 
-var oInfoToolbar = new sap.ui.layout.HorizontalLayout( {
-  visible: false,
-  allowWrapping: true, 
-  content: [ new sap.m.Label( {
-    text: "Sorted By: "
-  } ) ]
-} );
-oController.oInfoToolbar = oInfoToolbar;
-oInfoToolbar.addStyleClass( "filterTokenizer" );
+    var oInfoToolbar = new sap.ui.layout.HorizontalLayout( {
+      visible: false,
+      allowWrapping: true, 
+      content: [ new sap.m.Label( {
+        text: "Sorted By: "
+      } ) ]
+    } );
+    oController.oInfoToolbar = oInfoToolbar;
+    oInfoToolbar.addStyleClass( "filterTokenizer" );
 
-var oToken = new sap.m.Token({
-  'delete': [ oController.deleteSort, oController ]
-});
-oController.oToken = oToken;
+    var oToken = new sap.m.Token({
+      'delete': [ oController.deleteSort, oController ]
+    });
+    oController.oToken = oToken;
 
-// TABLE
+    // TABLE
 
-var accSettingsTable = new sap.m.Table({
-  mode: sap.m.ListMode.MultiSelect,
-  width:"92%",
-  columns: [
-  new sap.m.Column({
-    hAlign : "Left",
-    header: new sap.m.Label({
-      text : "Account ID"
-    })
-  }),
-  new sap.m.Column({
-    hAlign : "Left",
-    header: new sap.m.Label({
-      text: "Account Name"
-    })
-  }),
-  new sap.m.Column({
-    hAlign : "Left",
-    header: new sap.m.Label({
-      text: "Control Center"
-    })
-  }),
-  new sap.m.Column({
-    hAlign : "Left",
-    header: new sap.m.Label({
-      text: "Contact"
-    })
-  }),
-  new sap.m.Column({
-    hAlign : "Left",
-    header: new sap.m.Label({
-      text: "Email"
-    })
-  }),
-  new sap.m.Column({
-    hAlign : "Left",
-    width:"50px",
-    header: new sap.m.Label({
-      text: "Edit"
-    })
-  })
-  ]
-}).addStyleClass('accSettingsTable');
-oController
-
-
-
-var oaccIDSelect = new sap.m.Select({
-  enabled: true, 
-  width: "100%",
-  items: [],
-  layoutData: new sap.ui.layout.GridData({
-    span: "L12 M12 S12"
-  }),
-  change: function(e) {
-    var value = this.getSelectedItem().getText(); 
-    oController.onaccIDSelectChange(value); 
-  }
-});
-oController.oaccIDSelect=oaccIDSelect; 
-
-var HorizontalLayout = new sap.ui.layout.HorizontalLayout({
-  content: [
-  new sap.m.Panel({
-    content: [
-    new sap.ui.layout.Grid({
-      content: [
-      new sap.m.Label({
-        text: "Account ID",
-        layoutData: new sap.ui.layout.GridData({
-          linebreak: true, 
-          span: "L12 M12 S12"
+    var accSettingsTable = new sap.m.Table({
+      mode: sap.m.ListMode.MultiSelect,
+      width:"92%",
+      columns: [
+      new sap.m.Column({
+        hAlign : "Left",
+        header: new sap.m.Label({
+          text : "Account ID"
         })
       }),
-      oaccIDSelect
+      new sap.m.Column({
+        hAlign : "Left",
+        header: new sap.m.Label({
+          text: "Account Name"
+        })
+      }),
+      new sap.m.Column({
+        hAlign : "Left",
+        header: new sap.m.Label({
+          text: "Control Center"
+        })
+      }),
+      new sap.m.Column({
+        hAlign : "Left",
+        header: new sap.m.Label({
+          text: "Contact"
+        })
+      }),
+      new sap.m.Column({
+        hAlign : "Left",
+        header: new sap.m.Label({
+          text: "Email"
+        })
+      }),
+      new sap.m.Column({
+        hAlign : "Left",
+        width:"50px",
+        header: new sap.m.Label({
+          text: "Edit"
+        })
+      })
+      ]
+    }).addStyleClass('accSettingsTable');
+    oController
+
+
+
+    var oaccIDSelect = new sap.m.Select({
+      enabled: true, 
+      width: "100%",
+      items: [],
+      layoutData: new sap.ui.layout.GridData({
+        span: "L12 M12 S12"
+      }),
+      change: function(e) {
+        var value = this.getSelectedItem().getText(); 
+        oController.onaccIDSelectChange(value); 
+      }
+    });
+    oController.oaccIDSelect=oaccIDSelect; 
+
+    var HorizontalLayout = new sap.ui.layout.HorizontalLayout({
+      content: [
+      new sap.m.Panel({
+        content: [
+        new sap.ui.layout.Grid({
+          content: [
+          new sap.m.Label({
+            text: "Account ID",
+            layoutData: new sap.ui.layout.GridData({
+              linebreak: true, 
+              span: "L12 M12 S12"
+            })
+          }),
+          oaccIDSelect
+          ]
+        })
+        ]
+      })
       ]
     })
-    ]
-  })
-  ]
-})
 
-var Subpanel = new sap.m.Panel({
-  content: [HorizontalLayout]
-})
+    var Subpanel = new sap.m.Panel({
+      content: [HorizontalLayout]
+    })
 
-var oPage = new sap.m.Page({
-  customHeader: appHeader, 
-  content: [Subpanel,SubHeader,accSettingsTable]
-})
+    var oPage = new sap.m.Page({
+      customHeader: appHeader, 
+      content: [Subpanel,SubHeader,accSettingsTable]
+    })
 
-return oPage; 
-}
+    return oPage; 
+  }
 
 })
