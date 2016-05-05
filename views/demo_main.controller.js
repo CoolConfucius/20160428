@@ -50,27 +50,28 @@ sap.ui.controller("demo.views.demo_main", {
     var that = this;
     that.carriers = []; 
     console.log("fillTable")
-    $.ajax({
-      url: '/sap/ocm/account_settings/ui/services/as.xsodata/account/',
-      type: "GET",
-      cache: false, 
-      headers: {"X-Csrf-token" : sessionStorage.getItem("CSRF-Token")},
-      dataType: "json",
-      success: function(data) {
-        that.accountsarray = data.d.results;
-        that.accSettingsModel.setData(that.accountsarray); 
-        for (var i=0;i<that.accountsarray.length;i++) {
-          that.pushTouniqueArray(that.carriers, accountsarray[i].CARRIER_NAME);
-        }
-        that.Addcarrier.addItem(new sap.ui.core.Item({text: "Select a Carrier",key:"default"}));
-        for (var j=0;j<that.carriers.length;j++) {
-          that.Addcarrier.addItem(new sap.ui.core.Item({text: that.carriers[j],key:that.carriers[j]}));
-        }
-      },
-      error: function(XMLHttpRequest, textStatus, errorThrown) {
-        sap.m.MessageToast.show("Error: "+XMLHttpRequest.responseText);
-      }
-    });
+    // $.ajax({
+    //   url: '/sap/ocm/account_settings/ui/services/as.xsodata/account/',
+    //   type: "GET",
+    //   cache: false, 
+    //   headers: {"X-Csrf-token" : sessionStorage.getItem("CSRF-Token")},
+    //   dataType: "json",
+    //   success: function(data) {
+    //     that.accountsarray = data.d.results;
+    //     that.accSettingsModel.setData(that.accountsarray); 
+    //     for (var i=0;i<that.accountsarray.length;i++) {
+    //       that.pushTouniqueArray(that.carriers, accountsarray[i].CARRIER_NAME);
+    //     }
+    //     that.Addcarrier.addItem(new sap.ui.core.Item({text: "Select a Carrier",key:"default"}));
+    //     for (var j=0;j<that.carriers.length;j++) {
+    //       that.Addcarrier.addItem(new sap.ui.core.Item({text: that.carriers[j],key:that.carriers[j]}));
+    //     }
+    //   },
+    //   error: function(XMLHttpRequest, textStatus, errorThrown) {
+    //     sap.m.MessageToast.show("Error: "+XMLHttpRequest.responseText);
+    //   }
+    // });
+    sap.m.MessageToast.show("fillTable");
   },
 
   deviceLinkedAccountsArray: [],
