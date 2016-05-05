@@ -225,7 +225,7 @@ var accSettingsTable = new sap.m.Table({
 
     var oPage = new sap.m.Page({
       customHeader: appHeader, 
-      content: [Subpanel,SubHeader]
+      content: [Subpanel,SubHeader,accSettingsTable]
     })
 
     return oPage; 
