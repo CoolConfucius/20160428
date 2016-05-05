@@ -177,6 +177,13 @@ var accSettingsTable = new sap.m.Table({
       header: new sap.m.Label({
         text: "Email"
       })
+    }),
+    new sap.m.Column({
+      hAlign : "Left",
+      width:"50px",
+      header: new sap.m.Label({
+        text: "Edit"
+      })
     })
 
   ]
