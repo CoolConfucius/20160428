@@ -162,7 +162,11 @@ sap.ui.controller("demo.views.demo_main", {
   openFilterPanel: function(oEvt) {
     var that = this;
     that.getFilterPanelinfo();
-    
+
+    if(!that.Subpanel.getExpanded()) {
+      that.Subpanel.setExpanded(true);
+      that.filterBtn.setIcon('sap-icon://decline');
+    }
   }
 
 
