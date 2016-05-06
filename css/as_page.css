@@ -41,3 +41,10 @@
 .ocmas-page #__page0-cont {
   background-color: white !important;
 }
+
+.as_SubheaderBar {
+  background: none !important;
+  background-color: white! important;  
+  box-shadow: none !important;
+  margin-left: 4%;
+}
