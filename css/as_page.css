@@ -52,3 +52,14 @@
 .as_SubheaderBar .sapMBtnIcon {
   color: #000000;
 }
+
+.acctitle {
+  font-size:20px;
+}
+
+.accSettingsTable {
+  background: none !important;
+  background-color: white! important;
+  box-shadow: none !important;
+  margin-left: 4%;  
+}
