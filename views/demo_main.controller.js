@@ -176,6 +176,7 @@ sap.ui.controller("demo.views.demo_main", {
   array:[],
   accIDArray:[],
   accNameArray:[],
+  controlArray:[],
 
 
 
