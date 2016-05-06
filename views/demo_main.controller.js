@@ -92,6 +92,8 @@ sap.ui.controller("demo.views.demo_main", {
     });
   },
 
+  accountHovered:"",
+
   onSort: function(value) {
     // var that = this; 
     // var oSorter = new sap.ui.model.Sorter(value, false);
