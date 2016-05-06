@@ -224,7 +224,7 @@ sap.ui.jsview("demo.views.demo_main", {
 
         $("td").hover(
           function(){
-            
+            col = $(this).parent().children().index($(this));
           }
         );
       }
