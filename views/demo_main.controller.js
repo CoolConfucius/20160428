@@ -180,7 +180,10 @@ sap.ui.controller("demo.views.demo_main", {
 
   getFilterPanelinfo: function() {
     var that = this;
-    
+
+    $.ajax({
+      
+    })
   }
 
 
