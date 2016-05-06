@@ -114,6 +114,23 @@ sap.ui.controller("demo.views.demo_main", {
     });
   },
 
+  onContactHover: function(e) {
+    var that=this;
+    $.ajax({
+      url: '/sap/ocm/account_settings/ui/services/as.xsodata/deviceaccess?$filter=ACCOUNTID eq '+"'"+that.accoundtHovered+"'"+' and PRIMARYCONTACT eq '+"'"+that.contactHovered+"'",
+      type: "GET",
+      cache: false,
+      headers: {"X-Csrf-token" : sessionStorage.getItem("CSRF-Token")},
+      dataType: "json",
+      success: function(data) {
+        that.openContactMenu(data,e);
+      },
+      error: function(XMLHttpRequest, textStatus, errorThrown) {
+        sap.m.MessageToast.show("Error: "+XMLHttpRequest.responseText);
+      }
+    });
+  },
+
   onSort: function(value) {
     // var that = this; 
     // var oSorter = new sap.ui.model.Sorter(value, false);
