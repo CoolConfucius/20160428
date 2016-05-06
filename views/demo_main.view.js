@@ -331,6 +331,15 @@ sap.ui.jsview("demo.views.demo_main", {
           ]
         })
         ]
+      }),
+      new sap.m.Panel({
+        content: [
+          new sap.ui.layout.Grid({
+            content: [
+              goButton
+            ]
+          })
+        ]
       })
 
       ]
