@@ -101,6 +101,13 @@ sap.ui.controller("demo.views.demo_main", {
     };
   },
 
+  accIDvale: "All",
+  accNamevalue: "All",
+  controlvalue: "All",
+
+  
+
+
   openFilterPanel: function(oEvt){
     alert("openFilterPanel"); 
   }
