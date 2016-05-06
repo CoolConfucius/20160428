@@ -167,6 +167,10 @@ sap.ui.controller("demo.views.demo_main", {
       that.Subpanel.setExpanded(true);
       that.filterBtn.setIcon('sap-icon://decline');
     }
+    else {
+      that.Subpanel.setExpanded(false);
+      that.filterBtn.setIcon('sap-icon://add-filter');
+    }
   }
 
 
