@@ -254,6 +254,20 @@ sap.ui.jsview("demo.views.demo_main", {
     });
     oController.oaccIDSelect=oaccIDSelect; 
 
+    var oaccNameSelect = new sap.m.Select({
+      enabled: true, 
+      width: "100%",
+      items: [],
+      layoutData: new sap.ui.layout.GridData({
+        span: "L12 M12 S12"
+      }),
+      change: function(e) {
+        var value = this.getSelectedItem().getText(); 
+        oController.onaccNameSelectChange(value); 
+      }
+    });
+    oController.oaccNameSelect=oaccNameSelect; 
+
     var HorizontalLayout = new sap.ui.layout.HorizontalLayout({
       content: [
       new sap.m.Panel({
