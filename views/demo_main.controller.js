@@ -192,6 +192,7 @@ sap.ui.controller("demo.views.demo_main", {
         that.accIDArray =[];
         that.accNameArray =[];
         that.controlArray =[];
+        that.oaccIDSelect.removeAllItems();
       }
     })
   }
