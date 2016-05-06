@@ -207,6 +207,8 @@ sap.ui.controller("demo.views.demo_main", {
             that.pushTouniqueArray(that.controlArray,that.array[s].CONTROL_CENTER);
           }
         }
+
+        that.oaccIDSelect.addItem(new sap.ui.core.Item({text: "All"}));
       }
     })
   }
