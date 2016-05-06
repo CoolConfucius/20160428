@@ -93,11 +93,12 @@ sap.ui.controller("demo.views.demo_main", {
   },
 
   onSort: function(value) {
-    var that = this; 
-    var oSorter = new sap.ui.model.Sorter(value, false);
+    // var that = this; 
+    // var oSorter = new sap.ui.model.Sorter(value, false);
 
-    var binding = that.accSettingsTable.getBinding("items");
-    binding.sort(oSorter);
+    // var binding = that.accSettingsTable.getBinding("items");
+    // binding.sort(oSorter);
+    console.log(value);
   },
 
 
