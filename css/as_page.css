@@ -196,3 +196,19 @@
   cursor: pointer;
 }
 
+.as_SubheaderBar .sapMBarLeft {
+  height: auto !important;
+}
+
+.sapMMsgBoxText {
+  margin: 20px; 
+}
+
+.sapMDialogScrollCont {
+  padding: 0; 
+}
+
+.radiobuttonheight .sapMLabel {
+  font-weight: bold;
+  font-size: 16px;
+}
