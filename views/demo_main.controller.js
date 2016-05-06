@@ -131,6 +131,16 @@ sap.ui.controller("demo.views.demo_main", {
     });
   },
 
+  openCarrierMenu: function(data) {
+    var that = this;
+
+    that.ocarrieritem1.setText("Valid "+data.d.results[0].CARRIERNAME);
+    that.ocarrieritem2.setText("URL: "+data.d.results[0].URL);
+    that.ocarrieritem3.setText("Username: "+data.d.results[0].USERNAME);
+    that.ocarrieritem4.setText("Password: ********");
+    that.ocarrieritem5.setText("Lisence Key: "+data.d.results[0].LICENSEKEY);
+  }
+
   onSort: function(value) {
     // var that = this; 
     // var oSorter = new sap.ui.model.Sorter(value, false);
