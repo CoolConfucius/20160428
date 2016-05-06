@@ -212,6 +212,8 @@ sap.ui.jsview("demo.views.demo_main", {
     }).addStyleClass('accSettingstemplate');
     oController.accSettingstemplate = accSettingstemplate;
 
+    // accSettingsTable.setModel(oController.accSettingsModel); 
+
 
 
     var oaccIDSelect = new sap.m.Select({
