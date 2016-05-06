@@ -75,3 +75,26 @@
   margin-left: 2%;
   color: white;
 }
+
+.panels {
+  margin-top: 15px;
+  height: 35px !important;
+}
+
+.Subpanel {
+  background-color: #ffffff;
+  border-bottom: 1px solid #474187;
+}
+
+.Subpanel .sapMPanelExpandableIcon {
+  display: none; 
+}
+
+.Subpanel .sapMPanelContent {
+  height: 100px;
+}
+
+.sapUiHLayoutChildWrapper .sapMPanelContent {
+  border-bottom: 0 !important;
+}
+
