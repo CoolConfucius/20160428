@@ -209,7 +209,7 @@ sap.ui.jsview("demo.views.demo_main", {
           textAlign : sap.ui.core.TextAlign.Begin
         })
       ]
-    })
+    }).addStyleClass('accSettingstemplate');
 
 
 
