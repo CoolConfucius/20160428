@@ -197,9 +197,13 @@ sap.ui.controller("demo.views.demo_main", {
         that.ocontrolSelect.removeAllItems();
 
         for (var s=0; s < that.array.length; s++) {
-          if (that.array[s].ACCOUNTID != null) {
+          if (that.array[s].ACCOUNTID !== null) {
             that.pushTouniqueArray(that.accIDArray,that.array[s].ACCOUNTID);
           }
+          if (that.array[s].NAME !== null) {
+            that.pushTouniqueArray(that.accNameArray,that.array[s].NAME);
+          }
+          
         }
       }
     })
