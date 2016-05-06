@@ -188,7 +188,7 @@ sap.ui.controller("demo.views.demo_main", {
       headers: {"X-Csrf-token" : sessionStorage.getItem("CSRF-Token")},
       dataType: "json",
       success: function(data) {
-        
+        that.array = data.d.results;
       }
     })
   }
