@@ -152,3 +152,14 @@
   outline: none !important;
 }
 
+.Addremovelink {
+  height: 40px;
+}
+
+.Addcontrolcenter .sapMSltLabel, .Addcarrier .sapMSltLabel, .Addstate .sapMSltLabel, .Addcountry .sapMSltLabel {
+  line-height: 32px;
+}
+
+.Addcontrolcenter .sapMSltArrow, .Addcarrier .sapMSltArrow, .Addstate .sapMSltArrow, .Addcountry .sapMSltArrow {
+  line-height: 34px;
+}
