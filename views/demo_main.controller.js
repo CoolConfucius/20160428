@@ -191,6 +191,7 @@ sap.ui.controller("demo.views.demo_main", {
         that.array = data.d.results;
         that.accIDArray =[];
         that.accNameArray =[];
+        that.controlArray =[];
       }
     })
   }
