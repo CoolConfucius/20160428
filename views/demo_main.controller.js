@@ -195,6 +195,10 @@ sap.ui.controller("demo.views.demo_main", {
         that.oaccIDSelect.removeAllItems();
         that.oaccNameSelect.removeAllItems();
         that.ocontrolSelect.removeAllItems();
+
+        for (var s=0; s < that.array.length; s++) {
+          
+        }
       }
     })
   }
