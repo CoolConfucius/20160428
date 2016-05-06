@@ -230,6 +230,10 @@ sap.ui.jsview("demo.views.demo_main", {
 
             $(".accSettingsTable"+" tr:nth-child("+iconrow+") td:nth-child(5) .sapUiIcon").css("color","black");
             $(".accSettingsTable"+" tr:nth-child("+iconrow+") td:nth-child(6) .sapUiIcon").css("color","black");
+          },
+          function(){
+            $(".accSettingsTable"+" tr:nth-child("+iconrow+") td:nth-child(5) .sapUiIcon").css("color","white");
+            $(".accSettingsTable"+" tr:nth-child("+iconrow+") td:nth-child(6) .sapUiIcon").css("color","white");
           }
         );
       }
