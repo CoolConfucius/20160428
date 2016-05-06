@@ -189,6 +189,7 @@ sap.ui.controller("demo.views.demo_main", {
       dataType: "json",
       success: function(data) {
         that.array = data.d.results;
+        that.accIDArray =[];
       }
     })
   }
