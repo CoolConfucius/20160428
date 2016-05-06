@@ -98,7 +98,7 @@ sap.ui.controller("demo.views.demo_main", {
 
     var binding = that.accSettingsTable.getBinding("items");
     binding.sort(oSorter);
-  }
+  },
 
 
   pushTouniqueArray: function(array, item) {
