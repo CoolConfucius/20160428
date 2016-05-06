@@ -269,36 +269,38 @@ sap.ui.jsview("demo.views.demo_main", {
           }),
           oaccIDSelect
           ]
-        }),
-        new sap.m.Panel({
+        })
+        ]
+      }),
+      new sap.m.Panel({
+        content: [
+        new sap.ui.layout.Grid({
           content: [
-          new sap.ui.layout.Grid({
-            content: [
-            new sap.m.Label({
-              text: "Account ID",
-              layoutData: new sap.ui.layout.GridData({
-                linebreak: true, 
-                span: "L12 M12 S12"
-              })
-            }),
-            oaccIDSelect
-            ]
-          })
+          new sap.m.Label({
+            text: "Account Name",
+            layoutData: new sap.ui.layout.GridData({
+              linebreak: true, 
+              span: "L12 M12 S12"
+            })
+          }),
+          oaccNameSelect
           ]
         })
         ]
-      })
+      })      
+      ]
+    })
 
-      var Subpanel = new sap.m.Panel({
-        content: [HorizontalLayout]
-      })
+    var Subpanel = new sap.m.Panel({
+      content: [HorizontalLayout]
+    })
 
-      var oPage = new sap.m.Page({
-        customHeader: appHeader, 
-        content: [Subpanel,SubHeader,accSettingsTable]
-      })
+    var oPage = new sap.m.Page({
+      customHeader: appHeader, 
+      content: [Subpanel,SubHeader,accSettingsTable]
+    })
 
-      return oPage; 
-    }
+    return oPage; 
+  }
 
-  })
+})
