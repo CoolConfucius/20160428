@@ -130,3 +130,25 @@
   font-weight: bold;
   font-size: 16px;
 }
+
+.verticalLayout {
+  margin-left: 2%;
+}
+
+.verticalLayout .sapMInput .sapMInputBaseInner, .Addcontrolcenter, .Addcarrier, .Addstate, .Addcountry {
+  height: 33px;
+}
+
+.vertalLayout td {
+  padding: 0;
+}
+
+.Addaddlink {
+  margin-left: 3px;
+  height: 40px;
+}
+
+*:focus, *:active, *:hover {
+  outline: none !important;
+}
+
