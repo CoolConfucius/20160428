@@ -63,3 +63,15 @@
   box-shadow: none !important;
   margin-left: 4%;  
 }
+
+.accSettingsTable .panels .sapMPanelContent {
+  border-bottom: 0;
+  background-color: inherit;
+  margin-left: -5%;
+  margin-top: -8%;
+}
+
+.accSettingsTable .panels .sapMPanelContent .sapUiIcon {
+  margin-left: 2%;
+  color: white;
+}
