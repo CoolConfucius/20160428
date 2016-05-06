@@ -220,6 +220,7 @@ sap.ui.jsview("demo.views.demo_main", {
         var col;
         var row; 
         var iconrow; 
+        var startTimer; 
       }
     })    
 
