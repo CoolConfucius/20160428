@@ -301,7 +301,24 @@ sap.ui.jsview("demo.views.demo_main", {
           ]
         })
         ]
-      })      
+      }),
+      new sap.m.Panel({
+        content: [
+        new sap.ui.layout.Grid({
+          content: [
+          new sap.m.Label({
+            text: "Control Center",
+            layoutData: new sap.ui.layout.GridData({
+              linebreak: true, 
+              span: "L12 M12 S12"
+            })
+          }),
+          // 
+          ]
+        })
+        ]
+      })
+
       ]
     })
 
