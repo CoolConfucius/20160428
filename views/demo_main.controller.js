@@ -218,6 +218,13 @@ sap.ui.controller("demo.views.demo_main", {
         for (var j = 0; j < that.accNameArray.length; j++) {
           that.oaccNameSelect.addItem(new sap.ui.core.Item({text: that.accNameArray[j]}));
         }
+        for (var i = 0; i < that.control.length; i++) {
+          that.ocontrolSelect.addItem(new sap.ui.core.Item({text: that.control[i]}));
+        }
+
+      },
+      error: function(XMLHttpRequest, textStatus, errorThrown) {
+        sap.m.MessageToast.show("Error: "+XMLHttpRequest.responseText);
       }
     })
   }
