@@ -219,6 +219,7 @@ sap.ui.jsview("demo.views.demo_main", {
       onAfterRendering: function(){
         var col;
         var row; 
+        var iconrow; 
       }
     })    
 
