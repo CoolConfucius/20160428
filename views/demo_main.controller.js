@@ -190,6 +190,7 @@ sap.ui.controller("demo.views.demo_main", {
       success: function(data) {
         that.array = data.d.results;
         that.accIDArray =[];
+        that.accNameArray =[];
       }
     })
   }
