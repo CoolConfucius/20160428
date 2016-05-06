@@ -48,3 +48,7 @@
   box-shadow: none !important;
   margin-left: 4%;
 }
+
+.as_SubheaderBar .sapMBtnIcon {
+  color: #000000;
+}
