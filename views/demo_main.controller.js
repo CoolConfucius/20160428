@@ -178,7 +178,10 @@ sap.ui.controller("demo.views.demo_main", {
   accNameArray:[],
   controlArray:[],
 
-
+  getFilterPanelinfo: function() {
+    var that = this;
+    
+  }
 
 
   onSort: function(value) {
