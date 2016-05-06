@@ -203,7 +203,9 @@ sap.ui.controller("demo.views.demo_main", {
           if (that.array[s].NAME !== null) {
             that.pushTouniqueArray(that.accNameArray,that.array[s].NAME);
           }
-          
+          if (that.array[s].CONTROL_CENTER !== null) {
+            that.pushTouniqueArray(that.controlArray,that.array[s].CONTROL_CENTER);
+          }
         }
       }
     })
