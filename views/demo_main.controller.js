@@ -92,6 +92,15 @@ sap.ui.controller("demo.views.demo_main", {
     });
   },
 
+  onSort: function(value) {
+    var that = this; 
+    var oSorter = new sap.ui.model.Sorter(value, false);
+
+    var binding = that.accSettingsTable.getBinding("items");
+    binding.sort(oSorter);
+  }
+
+
   pushTouniqueArray: function(array, item) {
     for (var i = 0; i < array.length; i++) {
       if (array[i].indexOf(item) !== -1) {
@@ -105,7 +114,7 @@ sap.ui.controller("demo.views.demo_main", {
   accNamevalue: "All",
   controlvalue: "All",
 
-  
+
 
 
   openFilterPanel: function(oEvt){
