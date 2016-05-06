@@ -199,6 +199,20 @@ sap.ui.jsview("demo.views.demo_main", {
     contactpanel.addContent(new sap.m.Text({text: "{PRIMARYCONTACT}",textAlign : sap.ui.core.TextAlign.Begin}));
     contactpanel.addContent(new sap.ui.core.Icon({src:"sap-icon://employee-lookup"}));
 
+    var accSettingstemplate = new sap.m.ColumnListItem({
+      type : "Active",
+      unread : false, 
+      vAlign : "Middle",
+      cells : [
+        new sap.m.Text({
+          text : "{ACCOUNTID}",
+          textAlign : sap.ui.core.TextAlign.Begin
+        })
+      ]
+    })
+
+
+
     var oaccIDSelect = new sap.m.Select({
       enabled: true, 
       width: "100%",
