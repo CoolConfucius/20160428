@@ -146,6 +146,19 @@ sap.ui.controller("demo.views.demo_main", {
     that.ocarrierMenu.open(this._bKeyboard, eDock.CenterTop, eDock.CenterBottom);
   },
 
+  openContactMenu: function(data, e) {
+    console.log("openContactMenu", e);
+    var that = this;
+
+    that.ocontactitem1.setText(data.d.results[0].PRIMARYCONTACT);
+    that.ocontactitem2.setText("Email: "+data.d.results[0].EMAILCONTACT);
+    that.ocontactitem3.setText("Phone: "+data.d.results[0].PHONE);
+    that.ocontactitem4.setText("Address: "+data.d.results[0].ADDRESS);
+
+    var eDock = sap.ui.core.Popup.Dock;
+    that.ocarrierMenu.open(this._bKeyboard, eDock.CenterTop, eDock.CenterRight);
+  },
+
 
 
 
