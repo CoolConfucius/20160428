@@ -93,6 +93,7 @@ sap.ui.controller("demo.views.demo_main", {
   },
 
   accountHovered:"",
+  carrierHovered:"",
 
   onSort: function(value) {
     // var that = this; 
