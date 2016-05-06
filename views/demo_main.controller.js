@@ -214,7 +214,10 @@ sap.ui.controller("demo.views.demo_main", {
 
         for (var k = 0; k < that.accIDArray.length; k++) {
           that.oaccIDSelect.addItem(new sap.ui.core.Item({text: that.accIDArray[k]}));
-        };
+        }
+        for (var j = 0; j < that.accNameArray.length; j++) {
+          that.oaccNameSelect.addItem(new sap.ui.core.Item({text: that.accNameArray[j]}));
+        }
       }
     })
   }
