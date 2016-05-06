@@ -218,6 +218,7 @@ sap.ui.jsview("demo.views.demo_main", {
     accSettingsTable.addEventDelegate({
       onAfterRendering: function(){
         var col;
+        var row; 
       }
     })    
 
