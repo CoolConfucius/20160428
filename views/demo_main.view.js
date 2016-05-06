@@ -215,6 +215,11 @@ sap.ui.jsview("demo.views.demo_main", {
     // accSettingsTable.setModel(oController.accSettingsModel); 
     accSettingsTable.bindAggregation("items", "/", accSettingstemplate); 
 
+    accSettingsTable.addEventDelegate({
+      onAfterRendering: function(){
+        var col;
+      }
+    })    
 
 
     var oaccIDSelect = new sap.m.Select({
