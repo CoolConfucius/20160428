@@ -96,6 +96,20 @@ sap.ui.controller("demo.views.demo_main", {
   carrierHovered:"",
   contactHovered:"",
 
+  onCarrierHover: function() {
+    var that=this;
+    $.ajax({
+      url: '/sap/ocm/account_settings/ui/services/as.xsodata/deviceaccess?$filter=ACCOUNTID eq '+"'"+that.accoundtHovered+"'"+' and CARRIERNAME eq '+"'"+that.carrierHovered+"'",
+      type: "GET",
+      cache: false,
+      headers: {"X-Csrf-token" : sessionStorage.getItem("CSRF-Token")},
+      dataType: "json",
+      success: function(data) {
+        
+      }
+    })
+  }
+
   onSort: function(value) {
     // var that = this; 
     // var oSorter = new sap.ui.model.Sorter(value, false);
