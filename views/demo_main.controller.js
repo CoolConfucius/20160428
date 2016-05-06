@@ -105,10 +105,14 @@ sap.ui.controller("demo.views.demo_main", {
       headers: {"X-Csrf-token" : sessionStorage.getItem("CSRF-Token")},
       dataType: "json",
       success: function(data) {
-        
+        console.log(data.d.results);
+        that.openCarrierMenu(data);
+      },
+      error: function(XMLHttpRequest, textStatus, errorThrown) {
+        sap.m.MessageToast.show("Error: "+XMLHttpRequest.responseText);
       }
-    })
-  }
+    });
+  },
 
   onSort: function(value) {
     // var that = this; 
