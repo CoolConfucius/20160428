@@ -171,7 +171,9 @@ sap.ui.controller("demo.views.demo_main", {
       that.Subpanel.setExpanded(false);
       that.filterBtn.setIcon('sap-icon://add-filter');
     }
-  }
+  },
+
+  array:[],
 
 
 
