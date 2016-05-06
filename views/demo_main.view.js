@@ -226,6 +226,9 @@ sap.ui.jsview("demo.views.demo_main", {
           function(){
             col = $(this).parent().children().index($(this));
             row = $(this).parent().parent().children().index($(this).parent());
+            iconrow = row+1;
+
+            
           }
         );
       }
