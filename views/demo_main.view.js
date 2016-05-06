@@ -228,7 +228,8 @@ sap.ui.jsview("demo.views.demo_main", {
             row = $(this).parent().parent().children().index($(this).parent());
             iconrow = row+1;
 
-            
+            $(".accSettingsTable"+" tr:nth-child("+iconrow+") td:nth-child(5) .sapUiIcon").css("color","black");
+            $(".accSettingsTable"+" tr:nth-child("+iconrow+") td:nth-child(6) .sapUiIcon").css("color","black");
           }
         );
       }
