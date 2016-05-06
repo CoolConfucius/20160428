@@ -111,3 +111,12 @@
 }
 
 
+.Subpanel .sapUiRespGridBreak {
+  margin-bottom: 0 !important;
+}
+
+.AddgeneralHeader, .AddcarrierHeader, .AddcontactHeader {
+  background-color: white;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
