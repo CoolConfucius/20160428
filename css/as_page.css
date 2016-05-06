@@ -101,3 +101,13 @@
 .Subpanel .sapUiHLayout {
   width: 100%;
 }
+
+.Subpanel .sapUiHLayoutChildWrapper {
+  width: 25%;
+}
+
+.ocmas-page .Subpanel .sapUiHLayoutChildWrapper:nth-child(4) .sapUiRespGridSpanS12 {
+  padding-top: 19px;
+}
+
+
