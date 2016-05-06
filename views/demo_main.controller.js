@@ -159,6 +159,12 @@ sap.ui.controller("demo.views.demo_main", {
     that.ocarrierMenu.open(this._bKeyboard, eDock.CenterTop, eDock.CenterRight);
   },
 
+  openFilterPanel: function(oEvt) {
+    var that = this;
+    that.getFilterPanelinfo();
+    
+  }
+
 
 
 
