@@ -182,7 +182,7 @@ sap.ui.controller("demo.views.demo_main", {
     var that = this;
 
     $.ajax({
-      
+      url: '/sap/ocm/account_settings/ui/services/as.xsodata/account/',
     })
   }
 
