@@ -204,10 +204,10 @@ sap.ui.jsview("demo.views.demo_main", {
       unread : false, 
       vAlign : "Middle",
       cells : [
-        new sap.m.Text({
-          text : "{ACCOUNTID}",
-          textAlign : sap.ui.core.TextAlign.Begin
-        })
+      new sap.m.Text({
+        text : "{ACCOUNTID}",
+        textAlign : sap.ui.core.TextAlign.Begin
+      })
       ]
     }).addStyleClass('accSettingstemplate');
     oController.accSettingstemplate = accSettingstemplate;
@@ -235,7 +235,7 @@ sap.ui.jsview("demo.views.demo_main", {
             $(".accSettingsTable"+" tr:nth-child("+iconrow+") td:nth-child(5) .sapUiIcon").css("color","white");
             $(".accSettingsTable"+" tr:nth-child("+iconrow+") td:nth-child(6) .sapUiIcon").css("color","white");
           }
-        );
+          );
       }
     })    
 
@@ -269,22 +269,36 @@ sap.ui.jsview("demo.views.demo_main", {
           }),
           oaccIDSelect
           ]
+        }),
+        new sap.m.Panel({
+          content: [
+          new sap.ui.layout.Grid({
+            content: [
+            new sap.m.Label({
+              text: "Account ID",
+              layoutData: new sap.ui.layout.GridData({
+                linebreak: true, 
+                span: "L12 M12 S12"
+              })
+            }),
+            oaccIDSelect
+            ]
+          })
+          ]
         })
         ]
       })
-      ]
-    })
 
-    var Subpanel = new sap.m.Panel({
-      content: [HorizontalLayout]
-    })
+      var Subpanel = new sap.m.Panel({
+        content: [HorizontalLayout]
+      })
 
-    var oPage = new sap.m.Page({
-      customHeader: appHeader, 
-      content: [Subpanel,SubHeader,accSettingsTable]
-    })
+      var oPage = new sap.m.Page({
+        customHeader: appHeader, 
+        content: [Subpanel,SubHeader,accSettingsTable]
+      })
 
-    return oPage; 
-  }
+      return oPage; 
+    }
 
-})
+  })
