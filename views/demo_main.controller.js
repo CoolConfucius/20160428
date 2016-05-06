@@ -197,7 +197,9 @@ sap.ui.controller("demo.views.demo_main", {
         that.ocontrolSelect.removeAllItems();
 
         for (var s=0; s < that.array.length; s++) {
-          
+          if (that.array[s].ACCOUNTID != null) {
+            
+          }
         }
       }
     })
