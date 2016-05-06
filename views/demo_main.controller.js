@@ -183,6 +183,13 @@ sap.ui.controller("demo.views.demo_main", {
 
     $.ajax({
       url: '/sap/ocm/account_settings/ui/services/as.xsodata/account/',
+      type: "GET",
+      cache: false,
+      headers: {"X-Csrf-token" : sessionStorage.getItem("CSRF-Token")},
+      dataType: "json",
+      success: function(data) {
+        
+      }
     })
   }
 
