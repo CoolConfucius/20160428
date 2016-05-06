@@ -92,6 +92,15 @@ sap.ui.controller("demo.views.demo_main", {
     });
   },
 
+  onSort: function(value) {
+    // var that = this; 
+    // var oSorter = new sap.ui.model.Sorter(value, false);
+
+    // var binding = that.accSettingsTable.getBinding("items");
+    // binding.sort(oSorter);
+    console.log(value);
+  },
+  
   accountHovered:"",
   carrierHovered:"",
   contactHovered:"",
@@ -226,18 +235,12 @@ sap.ui.controller("demo.views.demo_main", {
       error: function(XMLHttpRequest, textStatus, errorThrown) {
         sap.m.MessageToast.show("Error: "+XMLHttpRequest.responseText);
       }
-    })
-  }
-
-
-  onSort: function(value) {
-    // var that = this; 
-    // var oSorter = new sap.ui.model.Sorter(value, false);
-
-    // var binding = that.accSettingsTable.getBinding("items");
-    // binding.sort(oSorter);
-    console.log(value);
+    });
   },
+
+
+
+
 
 
   pushTouniqueArray: function(array, item) {
