@@ -282,6 +282,18 @@ sap.ui.jsview("demo.views.demo_main", {
     });
     oController.ocontrolSelect=ocontrolSelect; 
 
+    var goButton = new sap.m.Button({
+      text:"Go",
+      type:"Emphasized",
+      width:"35%",
+      layoutData: new sap.ui.layout.GridData({
+        span: "L12 M12 S12"
+      }),
+      press: function(e) {
+        oController.goButtonPressed();
+      }
+    })
+
     var HorizontalLayout = new sap.ui.layout.HorizontalLayout({
       content: [
       new sap.m.Panel({
