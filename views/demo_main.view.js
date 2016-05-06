@@ -223,7 +223,9 @@ sap.ui.jsview("demo.views.demo_main", {
         var startTimer; 
 
         $("td").hover(
-
+          function(){
+            
+          }
         );
       }
     })    
