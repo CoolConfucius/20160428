@@ -327,7 +327,7 @@ sap.ui.jsview("demo.views.demo_main", {
               span: "L12 M12 S12"
             })
           }),
-          // 
+          ocontrolSelect
           ]
         })
         ]
