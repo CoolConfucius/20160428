@@ -211,6 +211,10 @@ sap.ui.controller("demo.views.demo_main", {
         that.oaccIDSelect.addItem(new sap.ui.core.Item({text: "All"}));
         that.oaccNameSelect.addItem(new sap.ui.core.Item({text: "All"}));
         that.ocontrolSelect.addItem(new sap.ui.core.Item({text: "All"}));
+
+        for (var k = 0; k < that.accIDArray.length; k++) {
+          that.oaccIDSelect.addItem(new sap.ui.core.Item({text: that.accIDArray[k]}));
+        };
       }
     })
   }
