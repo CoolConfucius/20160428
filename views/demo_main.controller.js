@@ -139,6 +139,9 @@ sap.ui.controller("demo.views.demo_main", {
     that.ocarrieritem3.setText("Username: "+data.d.results[0].USERNAME);
     that.ocarrieritem4.setText("Password: ********");
     that.ocarrieritem5.setText("Lisence Key: "+data.d.results[0].LICENSEKEY);
+
+    var eDock = sap.ui.core.Popup.Dock;
+    that.ocarrierMenu.open(this._bKeyboard, eDock.CenterTop, eDock.CenterBottom);
   }
 
   onSort: function(value) {
