@@ -222,7 +222,9 @@ sap.ui.jsview("demo.views.demo_main", {
         var iconrow; 
         var startTimer; 
 
-        $("td").hover()
+        $("td").hover(
+
+        );
       }
     })    
 
