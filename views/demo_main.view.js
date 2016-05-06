@@ -213,6 +213,7 @@ sap.ui.jsview("demo.views.demo_main", {
     oController.accSettingstemplate = accSettingstemplate;
 
     // accSettingsTable.setModel(oController.accSettingsModel); 
+    accSettingsTable.bindAggregation("items", "/", accSettingstemplate); 
 
 
 
