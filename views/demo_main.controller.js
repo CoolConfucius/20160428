@@ -115,6 +115,7 @@ sap.ui.controller("demo.views.demo_main", {
   },
 
   onContactHover: function(e) {
+    console.log("onContactHover");
     var that=this;
     $.ajax({
       url: '/sap/ocm/account_settings/ui/services/as.xsodata/deviceaccess?$filter=ACCOUNTID eq '+"'"+that.accoundtHovered+"'"+' and PRIMARYCONTACT eq '+"'"+that.contactHovered+"'",
@@ -132,6 +133,7 @@ sap.ui.controller("demo.views.demo_main", {
   },
 
   openCarrierMenu: function(data) {
+    console.log("openCarrierMenu");
     var that = this;
 
     that.ocarrieritem1.setText("Valid "+data.d.results[0].CARRIERNAME);
@@ -142,7 +144,10 @@ sap.ui.controller("demo.views.demo_main", {
 
     var eDock = sap.ui.core.Popup.Dock;
     that.ocarrierMenu.open(this._bKeyboard, eDock.CenterTop, eDock.CenterBottom);
-  }
+  },
+
+
+
 
   onSort: function(value) {
     // var that = this; 
