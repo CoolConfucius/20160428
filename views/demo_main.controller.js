@@ -100,7 +100,7 @@ sap.ui.controller("demo.views.demo_main", {
     // binding.sort(oSorter);
     console.log(value);
   },
-  
+
   accountHovered:"",
   carrierHovered:"",
   contactHovered:"",
@@ -252,9 +252,24 @@ sap.ui.controller("demo.views.demo_main", {
     };
   },
 
-  accIDvale: "All",
+  accIDvalue: "All",
   accNamevalue: "All",
   controlvalue: "All",
+
+  onaccIDSelectChange: function(value) {
+    var that = this;
+    that.accIDvalue = value; 
+  },
+
+  onaccNameSelectChange: function(value) {
+    var that = this;
+    that.accNamevalue = value; 
+  },
+  
+  oncontrolSelectChange: function(value) {
+    var that = this;
+    that.controlvalue = value; 
+  },
 
 
 
