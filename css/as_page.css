@@ -34,3 +34,7 @@
   text-shadow: 0 1px 0 transparent;
 }
 
+.ocm-borderless-button .sapMBtnInner {
+  border: 0 solid #bfbfbf;
+}
+
