@@ -235,7 +235,17 @@ sap.ui.jsview("demo.views.demo_main", {
             $(".accSettingsTable"+" tr:nth-child("+iconrow+") td:nth-child(5) .sapUiIcon").css("color","white");
             $(".accSettingsTable"+" tr:nth-child("+iconrow+") td:nth-child(6) .sapUiIcon").css("color","white");
           }
-          );
+        );
+
+        $("td:nth-child(5) .sapMText").hover(
+          function() {
+            startTimer = setTimeout(function(){
+              oController.accountHovered = oController.accountsarray[row].ACCOUNTID;
+              oController.carrierHovered = oController.accountsarray[row].CARRIER_NAME;
+              oController.onCarrierHover();
+            }, 300);
+          }
+        )
       }
     })    
 
