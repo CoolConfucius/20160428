@@ -281,7 +281,23 @@ sap.ui.jsview("demo.views.demo_main", {
     oController.ocarrieritem5 = ocarrieritem5;
 
     var ocarrierMenu = new sap.ui.unified.Menu({
-      item: [ocarrieritem1,ocarrieritem2,ocarrieritem3,ocarrieritem4,ocarrieritem5]
+      items: [ocarrieritem1,ocarrieritem2,ocarrieritem3,ocarrieritem4,ocarrieritem5]
+    });
+
+
+    var ocontactitem1 = new sap.ui.uinfied.MenuItem();
+    oController.ocontactitem1 = ocontactitem1;
+    var ocontactitem2 = new sap.ui.uinfied.MenuItem();
+    oController.ocontactitem2 = ocontactitem2;
+    var ocontactitem3 = new sap.ui.uinfied.MenuItem();
+    oController.ocontactitem3 = ocontactitem3;
+    var ocontactitem4 = new sap.ui.uinfied.MenuItem();
+    oController.ocontactitem4 = ocontactitem4;
+    var ocontactitem5 = new sap.ui.uinfied.MenuItem();
+    oController.ocontactitem5 = ocontactitem5;
+
+    var ocontactMenu = new sap.ui.unified.Menu({
+      items: [ocontactitem1,ocontactitem2,ocontactitem3,ocontactitem4,ocontactitem5]
     });
 
     var oaccIDSelect = new sap.m.Select({
