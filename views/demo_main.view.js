@@ -354,7 +354,7 @@ sap.ui.jsview("demo.views.demo_main", {
       press: function(e) {
         oController.goButtonPressed();
       }
-    })
+    }).addStyleClass('gobutton')
 
     var HorizontalLayout = new sap.ui.layout.HorizontalLayout({
       content: [
