@@ -269,15 +269,15 @@ sap.ui.jsview("demo.views.demo_main", {
 
     // MENU
 
-    var ocarrieritem1 = new sap.ui.uinfied.MenuItem();
+    var ocarrieritem1 = new sap.ui.unified.MenuItem();
     oController.ocarrieritem1 = ocarrieritem1;
-    var ocarrieritem2 = new sap.ui.uinfied.MenuItem();
+    var ocarrieritem2 = new sap.ui.unified.MenuItem();
     oController.ocarrieritem2 = ocarrieritem2;
-    var ocarrieritem3 = new sap.ui.uinfied.MenuItem();
+    var ocarrieritem3 = new sap.ui.unified.MenuItem();
     oController.ocarrieritem3 = ocarrieritem3;
-    var ocarrieritem4 = new sap.ui.uinfied.MenuItem();
+    var ocarrieritem4 = new sap.ui.unified.MenuItem();
     oController.ocarrieritem4 = ocarrieritem4;
-    var ocarrieritem5 = new sap.ui.uinfied.MenuItem();
+    var ocarrieritem5 = new sap.ui.unified.MenuItem();
     oController.ocarrieritem5 = ocarrieritem5;
 
     var ocarrierMenu = new sap.ui.unified.Menu({
@@ -285,15 +285,15 @@ sap.ui.jsview("demo.views.demo_main", {
     });
 
 
-    var ocontactitem1 = new sap.ui.uinfied.MenuItem();
+    var ocontactitem1 = new sap.ui.unified.MenuItem();
     oController.ocontactitem1 = ocontactitem1;
-    var ocontactitem2 = new sap.ui.uinfied.MenuItem();
+    var ocontactitem2 = new sap.ui.unified.MenuItem();
     oController.ocontactitem2 = ocontactitem2;
-    var ocontactitem3 = new sap.ui.uinfied.MenuItem();
+    var ocontactitem3 = new sap.ui.unified.MenuItem();
     oController.ocontactitem3 = ocontactitem3;
-    var ocontactitem4 = new sap.ui.uinfied.MenuItem();
+    var ocontactitem4 = new sap.ui.unified.MenuItem();
     oController.ocontactitem4 = ocontactitem4;
-    var ocontactitem5 = new sap.ui.uinfied.MenuItem();
+    var ocontactitem5 = new sap.ui.unified.MenuItem();
     oController.ocontactitem5 = ocontactitem5;
 
     var ocontactMenu = new sap.ui.unified.Menu({
@@ -354,7 +354,7 @@ sap.ui.jsview("demo.views.demo_main", {
       press: function(e) {
         oController.goButtonPressed();
       }
-    }).addStyleClass('gobutton')
+    }).addStyleClass('gobutton');
 
     var HorizontalLayout = new sap.ui.layout.HorizontalLayout({
       content: [
