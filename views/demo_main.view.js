@@ -265,7 +265,7 @@ sap.ui.jsview("demo.views.demo_main", {
           }
         );
       }
-    })    
+    }, accSettingsTable);
 
 
     var oaccIDSelect = new sap.m.Select({
