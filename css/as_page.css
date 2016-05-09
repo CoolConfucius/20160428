@@ -1,14 +1,17 @@
+
 .ocmas-page {
   background: #ffffff !important; 
 }
 
-.ocmas-page .as-app-header .sapMBarChild {
+/*.ocmas-page */
+.as-app-header .sapMBarChild {
   color: white;
   font-size: 1.3rem!important;
   text-shadow: none!important;
 }
 
-.ocmas-page>.sapMPageHeader {
+/*.ocmas-page>*/
+.sapMPageHeader {
   background: none !important;
   box-shadow: none !important;
   background: -webkit-linear-gradient(left, #474187, #60468D) !important;
@@ -38,7 +41,8 @@
   border: 0 solid #bfbfbf;
 }
 
-.ocmas-page #__page0-cont {
+/*.ocmas-page*/
+#__page0-cont {
   background-color: white !important;
 }
 
@@ -106,7 +110,8 @@
   width: 25%;
 }
 
-.ocmas-page .Subpanel .sapUiHLayoutChildWrapper:nth-child(4) .sapUiRespGridSpanS12 {
+/*.ocmas-page */
+.Subpanel .sapUiHLayoutChildWrapper:nth-child(4) .sapUiRespGridSpanS12 {
   padding-top: 19px;
 }
 
