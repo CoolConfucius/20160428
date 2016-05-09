@@ -244,6 +244,10 @@ sap.ui.jsview("demo.views.demo_main", {
               oController.carrierHovered = oController.accountsarray[row].CARRIER_NAME;
               oController.onCarrierHover();
             }, 300);
+          },
+          function() {
+            clearTimeout(startTimer);
+            oController.ocarrierMenu.close();
           }
         )
       }
