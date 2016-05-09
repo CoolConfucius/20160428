@@ -271,6 +271,14 @@ sap.ui.jsview("demo.views.demo_main", {
 
     var ocarrieritem1 = new sap.ui.uinfied.MenuItem();
     oController.ocarrieritem1 = ocarrieritem1;
+    var ocarrieritem2 = new sap.ui.uinfied.MenuItem();
+    oController.ocarrieritem2 = ocarrieritem2;
+    var ocarrieritem3 = new sap.ui.uinfied.MenuItem();
+    oController.ocarrieritem3 = ocarrieritem3;
+    var ocarrieritem4 = new sap.ui.uinfied.MenuItem();
+    oController.ocarrieritem4 = ocarrieritem4;
+    var ocarrieritem5 = new sap.ui.uinfied.MenuItem();
+    oController.ocarrieritem5 = ocarrieritem5;
 
 
     var oaccIDSelect = new sap.m.Select({
