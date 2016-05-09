@@ -267,6 +267,10 @@ sap.ui.jsview("demo.views.demo_main", {
       }
     }, accSettingsTable);
 
+    // MENU
+
+    var ocarrieritem1 = new sap.ui.uinfied.MenuItem();
+
 
     var oaccIDSelect = new sap.m.Select({
       enabled: true, 
