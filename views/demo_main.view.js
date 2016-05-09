@@ -281,8 +281,8 @@ sap.ui.jsview("demo.views.demo_main", {
     oController.ocarrieritem5 = ocarrieritem5;
 
     var ocarrierMenu = new sap.ui.unified.Menu({
-      
-    })
+      item: [ocarrieritem1,ocarrieritem2,ocarrieritem3,ocarrieritem4,ocarrieritem5]
+    });
 
     var oaccIDSelect = new sap.m.Select({
       enabled: true, 
