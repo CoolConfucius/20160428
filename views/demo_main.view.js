@@ -300,6 +300,8 @@ sap.ui.jsview("demo.views.demo_main", {
       items: [ocontactitem1,ocontactitem2,ocontactitem3,ocontactitem4,ocontactitem5]
     });
 
+    // FILTER PANEL
+
     var oaccIDSelect = new sap.m.Select({
       enabled: true, 
       width: "100%",
