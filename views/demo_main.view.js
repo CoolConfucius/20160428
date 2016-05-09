@@ -249,7 +249,21 @@ sap.ui.jsview("demo.views.demo_main", {
             clearTimeout(startTimer);
             oController.ocarrierMenu.close();
           }
-        )
+        );
+
+        $("td:nth-child(6) .sapMText").hover(
+          function() {
+            startTimer = setTimeout(function(){
+              oController.accountHovered = oController.accountsarray[row].ACCOUNTID;
+              oController.contactHovered = oController.accountsarray[row].PRIMARYCONTACT;
+              oController.onContactHover();
+            }, 300);
+          },
+          function() {
+            clearTimeout(startTimer);
+            oController.ocontactMenu.close();
+          }
+        );
       }
     })    
 
