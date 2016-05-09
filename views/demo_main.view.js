@@ -270,6 +270,7 @@ sap.ui.jsview("demo.views.demo_main", {
     // MENU
 
     var ocarrieritem1 = new sap.ui.uinfied.MenuItem();
+    oController.ocarrieritem1 = ocarrieritem1;
 
 
     var oaccIDSelect = new sap.m.Select({
